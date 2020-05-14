@@ -142,19 +142,30 @@ cd ~/tb3_catkin_ws && catkin_make
 ```
 ## 2. Load autorace gezebo env
 ```
+export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo turtlebot3_autorace.launch
 ```
 ## 3. Set Traffic Light，Parking and Toll Gate tasks
 ```
+export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo turtlebot3_autorace_mission.launch
 ```
-## 4. Start turtlebot3_autorace_core
+## 4. Calibrate camera
+```
+export GAZEBO_MODE=true
+export AUTO_IN_CALIB=action
+roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+```
+## 5. Start turtlebot3_autorace_core
 ```
 ## new terminal
 export AUTO_EX_CALIB=action
 export AUTO_DT_CALIB=action
 export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
+```
+## 6.Start all nodes
+```
 ## new terminal
 rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
