@@ -130,7 +130,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map
 export TURTLEBOT3_MODEL=burger
 rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.rviz
 ```
-![alt text](https://github.com/Jacob12138xieyuan/ros_simulation/blob/master/1.png?raw=true)
+![alt text](https://github.com/Jacob12138xieyuan/ros_simulation/blob/master/2.png?raw=true)
 ![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_virtual_navigation.png)
 
 #
