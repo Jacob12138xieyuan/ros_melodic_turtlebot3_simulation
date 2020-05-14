@@ -95,6 +95,7 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ## 4. Save map
 ```
 ## New terminal
+sudo apt-get install ros-melodic-map-server
 rosrun map_server map_saver -f ~/map
 ```
 ![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_virtual_slam_map.png)
