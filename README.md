@@ -21,7 +21,7 @@ source ~/tb3_catkin_ws/devel/setup.bash
 export TURTLEBOT3_MODEL=burger ## TURTLEBOT3 have burger, waffle and waffle_pi, choose the one you like
 roslaunch turtlebot3_fake turtlebot3_fake.launch
 ```
-![alt text](https://github.com/Jacob12138xieyuan/ros_simulation/blob/master/1.jpg?raw=true)
+![alt text](https://github.com/Jacob12138xieyuan/ros_simulation/blob/master/1.png?raw=true)
 #### Control robot in rviz
 ```
 ## Open new terminal
