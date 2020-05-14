@@ -90,6 +90,7 @@ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ## 3. Control & move it
 ```
 ## New terminal
+source ~/tb3_catkin_ws/devel/setup.bash
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 ## 4. Save map
