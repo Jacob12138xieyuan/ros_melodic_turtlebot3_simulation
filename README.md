@@ -43,19 +43,35 @@ $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
 ## 3. Control robot in Gazebo
+
+#### Start keyboard control
 ```
-## Open new termianl
+## Open new termianl, 
 export TURTLEBOT3_MODEL=burger
 ## TURTLEBOT3_MODEL有burger, waffle或waffle_pi三种    
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
+#### Load Gezebo env
 ```
-export TURTLEBOT3_MODEL=${TB3_MODEL}
+## Open new termianl
+export TURTLEBOT3_MODEL=burger
 ## TURTLEBOT3_MODEL有burger, waffle或waffle_pi三种   
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
-``````
-``````
+#### Start simulation
+```
+## Open new termianl
+export TURTLEBOT3_MODEL=burger
+## TURTLEBOT3_MODEL有burger, waffle或waffle_pi三种  
+roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
+```
+#### Start rviz GUI
+``` 
+## Open new termianl
+export TURTLEBOT3_MODEL=burger
+## TURTLEBOT3_MODEL有burger, waffle或waffle_pi三种  
+roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
+```
 ``````
 ``````
 ``````
