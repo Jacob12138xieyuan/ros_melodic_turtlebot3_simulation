@@ -38,9 +38,8 @@ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ![alt text](http://images.ncnynl.com/ros/2017/turtlebot3_world_bugger.png)
 ## 2. Load TurtleBot3 House Gazebo environment
 ```
-$ export TURTLEBOT3_MODEL=burger
-## TURTLEBOT3_MODEL有burger, waffle或waffle_pi三种
-$ roslaunch turtlebot3_gazebo turtlebot3_house.launch
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
 ![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_house.png)
 ## 3. Control robot in Gazebo
@@ -48,8 +47,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 #### Start keyboard control
 ```
 ## Open new termianl, 
-export TURTLEBOT3_MODEL=burger
-## TURTLEBOT3_MODEL有burger, waffle或waffle_pi三种    
+export TURTLEBOT3_MODEL=burger 
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 #### Load Gezebo env
@@ -90,6 +88,7 @@ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ## 3. Control & move it
 ```
 ## New terminal
+export TURTLEBOT3_MODEL=burger
 source ~/tb3_catkin_ws/devel/setup.bash
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
