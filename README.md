@@ -162,6 +162,7 @@ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibr
 export AUTO_EX_CALIB=action
 export AUTO_DT_CALIB=action
 export TURTLEBOT3_MODEL=burger
+source ~/tb3_catkin_ws/devel/setup.bash
 roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
 ```
 ## 6.Start all nodes
