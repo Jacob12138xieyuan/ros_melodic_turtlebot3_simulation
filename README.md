@@ -75,6 +75,8 @@ roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
 # Part 3 Build map with SLAM
 ## 1. Load gezebo env
 ```
+sudo apt-get install ros-melodic-gmapping
+cd ~/tb3_catkin_ws && catkin_make ## Compile
 export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
