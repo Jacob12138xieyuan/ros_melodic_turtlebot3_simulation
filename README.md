@@ -171,10 +171,36 @@ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
 rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 ![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_autorace_map_mission.png)
-``````
-``````
-``````
-``````
-``````
-``````
+#
+# Part 5 Turtlebot3 with manipulator
+## 1. Install packages
+```
+cd ~/tb3_catkin_ws/src/
+sudo apt-get install ros-melodic-moveit
+sudo apt-get install ros-melodic-moveit-msgs
+sudo apt-get install ros-melodic-joint-trajectory-controller
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git
+cd ~/tb3_catkin_ws && catkin_make
+```
+## 2. Load gezebo env
+```
+roslaunch turtlebot3_manipulation_gazebo turtlebot3_manipulation_gazebo.launch
+## Press [▶] button in Gazebo
+```
+## 3. Run move_group node 
+```
+## new terminal
+roslaunch turtlebot3_manipulation_moveit_config move_group.launch
+## Untill see "You can start planning now!"
+```
+## 4. Run rviz
+```
+## new terminal 
+roslaunch turtlebot3_manipulation_moveit_config moveit_rviz.launch
+```
+## 5. Run ROBOTIS GUI Controller
+```
+roslaunch turtlebot3_manipulation_gui turtlebot3_manipulation_gui.launch
+```
 
