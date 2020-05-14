@@ -71,9 +71,13 @@ roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
 ![alt text](http://images.ncnynl.com/ros/2017/turtlebot3_gazebo_rviz.png)
 #
 # Part 3 Build map with SLAM
+## 1. Install pakages
+```
+sudo apt-get install ros-melodic-map-server
+sudo apt-get install ros-melodic-gmapping
+```
 ## 1. Load gezebo env
 ```
-sudo apt-get install ros-melodic-gmapping
 cd ~/tb3_catkin_ws && catkin_make ## Compile
 export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
@@ -95,20 +99,24 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ## 4. Save map
 ```
 ## New terminal
-sudo apt-get install ros-melodic-map-server
 rosrun map_server map_saver -f ~/map
 ```
 ![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_virtual_slam_map.png)
 
 #
 # Part 4 Navigation using map
-## 1. Load gazebo env
+## 1. Install pakages
+```
+sudo apt-get install ros-melodic-navigation
+sudo apt-get install ros-melodic-move-base
+```
+## 2. Load gazebo env
 ```
 ## new termial
 export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
-## 2. start navigation program
+## 3. start navigation program
 ```
 ## new termial
 export TURTLEBOT3_MODEL=burger
