@@ -124,6 +124,13 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map
 ```
 ![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_virtual_navigation.png)
 
+## 4.
+```
+## new terminal
+export TURTLEBOT3_MODEL=burger
+rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.rviz
+```
+
 #
 # Part 4 AutoRace 
 ## 1. Install autorace package
