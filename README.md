@@ -72,7 +72,7 @@ roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
 ```
 ![alt text](http://images.ncnynl.com/ros/2017/turtlebot3_gazebo_rviz.png)
 #
-# Part 3 Build map
+# Part 3 Build map with SLAM
 ## 1. Load gezebo env
 ```
 export TURTLEBOT3_MODEL=burger
@@ -97,15 +97,49 @@ rosrun map_server map_saver -f ~/map
 ```
 ![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_virtual_slam_map.png)
 
-``````
-``````
-``````
-``````
-``````
-``````
-``````
-``````
-``````
+#
+# Part 4 Navigation using map
+## 1. Load gazebo env
+```
+## new termial
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+```
+## 2. start navigation program
+```
+## new termial
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
+```
+![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_virtual_navigation.png)
+
+#
+# Part 4 AutoRace 
+## 1. Install autorace package
+```
+cd ~/catkin_ws/src/
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git
+cd ~/catkin_ws && catkin_make
+```
+## 2. Load autorace gezebo env
+```
+roslaunch turtlebot3_gazebo turtlebot3_autorace.launch
+```
+## 3. Set Traffic Light，Parking and Toll Gate tasks
+```
+roslaunch turtlebot3_gazebo turtlebot3_autorace_mission.launch
+```
+## 4. Start turtlebot3_autorace_core
+```
+## new terminal
+export AUTO_EX_CALIB=action
+export AUTO_DT_CALIB=action
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
+## new terminal
+rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
+```
+![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_autorace_map_mission.png)
 ``````
 ``````
 ``````
