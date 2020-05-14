@@ -136,9 +136,9 @@ rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.rvi
 # Part 4 AutoRace 
 ## 1. Install autorace package
 ```
-cd ~/catkin_ws/src/
+cd ~/tb3_catkin_ws/src/
 git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git
-cd ~/catkin_ws && catkin_make
+cd ~/tb3_catkin_ws && catkin_make
 ```
 ## 2. Load autorace gezebo env
 ```
