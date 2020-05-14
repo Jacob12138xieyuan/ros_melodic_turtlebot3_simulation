@@ -124,13 +124,13 @@ export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
 
-
 ## 4. Set destination in rviz
 ```
 ## new terminal
 export TURTLEBOT3_MODEL=burger
 rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.rviz
 ```
+![alt text](https://github.com/Jacob12138xieyuan/ros_simulation/blob/master/1.png?raw=true)
 ![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_virtual_navigation.png)
 
 #
