@@ -189,19 +189,22 @@ cd ~/tb3_catkin_ws && catkin_make
 roslaunch turtlebot3_manipulation_gazebo turtlebot3_manipulation_gazebo.launch
 ## Press [▶] button in Gazebo
 ```
+![alt text](http://emanual.robotis.com/assets/images/platform/turtlebot3/manipulation/tb3_omx_gazebo.png)
 ## 3. Run move_group node 
 ```
 ## new terminal
 roslaunch turtlebot3_manipulation_moveit_config move_group.launch
 ## Untill see "You can start planning now!"
 ```
-## 4. Run rviz
+## 4. Control manipulator in rviz
 ```
 ## new terminal 
 roslaunch turtlebot3_manipulation_moveit_config moveit_rviz.launch
 ```
+![alt text](http://emanual.robotis.com/assets/images/platform/turtlebot3/manipulation/tb3_omx_rviz.png)
 ## 5. Run ROBOTIS GUI Controller
 ```
 roslaunch turtlebot3_manipulation_gui turtlebot3_manipulation_gui.launch
 ```
+![alt text](http://emanual.robotis.com/assets/images/platform/turtlebot3/manipulation/tb3_omx_gui_controller.png)
 
