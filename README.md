@@ -31,13 +31,13 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch ## Use w,a,d,x key to c
 ```
 #
 # Part 2 Start Gazebo
-## 1. Load TurtleBot3 World Gazebo environment
+## 1. Test TurtleBot3 World Gazebo environment
 ```
 export TURTLEBOT3_MODEL=burger  
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 ![alt text](http://images.ncnynl.com/ros/2017/turtlebot3_world_bugger.png)
-## 2. Load TurtleBot3 House Gazebo environment
+## 2. Test TurtleBot3 House Gazebo environment
 ```
 export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo turtlebot3_house.launch
@@ -57,7 +57,7 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 export TURTLEBOT3_MODEL=burger  
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
-#### Start simulation
+#### Start turtlebot3 simulation
 ```
 ## Open new termianl
 export TURTLEBOT3_MODEL=burger 
@@ -90,7 +90,7 @@ export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
 ![alt text](http://images.ncnynl.com/ros/2019/turtlebot3_virtual_slam.png)
-## 3. Control & move it
+## 3. Control & move robot
 ```
 ## New terminal
 export TURTLEBOT3_MODEL=burger
