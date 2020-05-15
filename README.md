@@ -248,6 +248,7 @@ cd ~/tb3_catkin_ws && catkin_make
 ```
 roslaunch rosplan_turtlebot3_demo turtlebot.launch
 ```
+![alt text](https://github.com/Jacob12138xieyuan/ros_simulation/blob/master/3.png?raw=true)
 ## 3. Generate a plan
 ```
 ## new terminal
@@ -261,3 +262,4 @@ rosrun rosplan_turtlebot3_demo turtlebot_explore.bash
 rosed rosplan_turtlebot3_demo waypoints.yaml
 rosrun rosplan_turtlebot3_demo turtlebot_explore_wp_from_file.bash
 ```
+![alt text](https://github.com/Jacob12138xieyuan/ros_simulation/blob/master/4.png?raw=true)
