@@ -249,10 +249,11 @@ cd ~/tb3_catkin_ws && catkin_make
 roslaunch rosplan_turtlebot3_demo turtlebot.launch
 ```
 ![alt text](https://github.com/Jacob12138xieyuan/ros_simulation/blob/master/3.png?raw=true)
-## 3. Generate a plan
+## 3. Generate a random plan
 ```
 ## new terminal
 source ~/tb3_catkin_ws/devel/setup.bash
+## First add a gola arrow in rviz, then run following command
 rosrun rosplan_turtlebot3_demo turtlebot_explore.bash
 ```
 ## 4. Custom waypoints
